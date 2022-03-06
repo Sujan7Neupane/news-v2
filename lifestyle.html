@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <!-- IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+</head>
+
+<body class="custom-bg-white custom-font-mukta">
+    <!-- Home Page Advertisin Space -->
+    <section class="custom-bg-dark py-4 text-center mt-0">
+        <div class="container custom-text-white">
+            <h2>HOME PAGE ADVERTISING SPACE</h2>
+        </div>
+    </section>
+
+    <!-- Header Ad Section -->
+    <section class="container">
+        <div class="custom-bg-primary py-3 custom-text-white custom-fs-24 custom-ad-banner-1230">
+            <p class="m-0">(Expandable banner/Head push)</p>
+            <p class="custom-fs-30">1230px*100px</p>
+        </div>
+    </section>
+
+  
+    <!-- Logo and more ad -->
+    <section class="container">
+        <div class="d-flex  justify-content-center align-items-center">
+            <div class="logo me-3">
+                <a href="index.html">
+                    <div class="logo-img">
+                        <img src="img/logoMain.png" alt="Logo Main" class="img-fluid">
+                    </div>
+                </a>
+                <div class="date custom-fs-16 custom-text-gray text-end">
+                    २८ साउन २०७८, बिहीबार
+                </div>
+            </div>
+            <div
+                class="custom-ad-banner-700 custom-bg-secondary d-none d-md-block text-center custom-text-white d-flex">
+                <p class="custom-fs-30 m-0"> (700px*70px) </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg custom-bg-primary custom-fs-18 p-0 sticky-top">
+        <div class="container">
+            <div class="bar custom-text-white" id='bar'><i class="fas fa-bars"></i></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">होमपेज</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="samachar.html">समाचार</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="business.html">विजनेश</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="lifestyle.html">जीवनशैली</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="suchana.html">सूचना प्रविधि</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertaiment.html">मनोरन्जन</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prabesh.html">प्रवास</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">खेलकुद</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex custom-text-white ">
+                <div class="search custom-bg-light-primary custom-transtion" id='search'>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="your-update custom-bg-dark-primary custom-transtion" id='navUpdateBtn'>
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="trending custom-bg-dark-primary d-flex custom-transtion" id="navTrendingBtn">
+                    <div class="img me-2">
+                        <img src="img/trendingIcon.png" alt="Trending IMAGE" />
+                    </div>
+                    <p class="m-0 d-none d-xl-block"> Trending</p>
+                </div>
+                <div class="language custom-bg-secondary custom-transtion">
+                    English
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap custom-bg-lightgray" id='search-wrap'>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <input type="date" name="from" id="from">
+                        </div>
+                        <div class="col-md-2 ">
+                            <input type="date" name="to" id="to">
+                        </div>
+                        <div class="col-md-3 ">
+                            <input type="text" name="keyword" id="keyword" placeholder="Keyword">
+                        </div>
+                        <div class="col-md-5 ">
+                            <button class="btn custom-bg-dark-primary">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="fresh-update-wrap" id='update'>
+            <div class="container">
+                <div class="fresh-update">
+                    <div class="nav-title">
+                        ताजा अपडेट
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="generic-post-wrap">
+                                <div class="d-flex">
+                                    <div class="post-thumbnail me-3">
+                                        <a href="#">
+                                            <img src="img/Pogba-300x182.jpg" alt="img2">
+                                        </a>
+                                    </div>
+                                    <div class="post-heading custom-fs-14 text-start p-0">
+                                        <h2 class="custom-fs-20"><a href="#" class="custom-text-dark">
+                                                ब्रुनो फर्नान्डेजको ह्याट्रिकमा म्यानचेष्टर युनाइटेडको शानदार जित</a>
+                                        </h2>
+                                        <div class="post-date d-flex justify-content-start align-items-center">
+                                            <i class="far fa-clock custom-text-secondary"></i>
+                                            <span class="ms-2 custom-text-gray">२७ मिनेट</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="closeBtn" id='updateClose'>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trending-hidden" id="trendingHidden">
+            <div class="container">
+                <div class="trending-wrap">
+                    <div class="nav-title">
+                        ट्रेन्डिङ
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">१.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">२.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">३.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">४.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">५.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">६.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">७.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">८.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">९.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">१०.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">११.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="side-card">
+                                <div class="trending">
+                                    <li class="custom-b-bottom custom-fs-18">
+                                        <span class="custom-fs-50 custom-text-lightgray">१२.</span>
+                                        <a href="#" class="custom-text-gray custom-fw-600 ">जितेका माधव नेपालले गुमाएका
+                                            अवसर !</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="closeBtn" id='trendingClose'>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="slide-nav" id="slide-menu">
+                <div class="slide-menu" id="menu">
+                    <ul class="menu">
+                        <a href="index.html">
+                            <li >होमपेज</li>
+                        </a>
+                        <a href="samachar.html">
+                            <li>समाचार</li>
+                        </a>
+                        <a href="business.html">
+                            <li >विजनेश</li>
+                        </a>
+                        <a href="lifestyle.html">
+                            <li class="active">जीवनशैली</li>
+                        </a>
+                        <a href="suchana.html">
+                            <li >सूचना प्रविधि</li>
+                        </a>
+                        <a href="entertaiment.html">
+                            <li>मनोरन्जन</li>
+                        </a>
+                        <a href="prabesh.html">
+                            <li>प्रवास</li>
+                        </a>
+                        <a href="sports.html">
+                            <li>खेलकुद</li>
+                        </a>
+                    </ul>
+                </div>
+                <i class="fas fa-arrow-left left-arrow" id="left-arrow"></i>
+                <div class="black-layer" id="layer">
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    
+    <!-- Trending Breadcrum -->
+    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="custom-b-bottom d-none d-lg-block">
+        <div class="container">
+            <ol class="breadcrumb custom-fs-16 custom-text-dark m-0">
+                <li class="breadcrumb-item title" aria-current="page">TRENDING</li>
+                <li class="breadcrumb-item"><a href="#"># नेपाली चलचित्र</a></li>
+                <li class="breadcrumb-item "><a href="#"># कोरोना भाइरस</a></li>
+                <li class="breadcrumb-item"><a href="#"># नेपाल प्रहरी</a></li>
+                <li class="breadcrumb-item"><a href="#"># अपराध</a></li>
+                <li class="breadcrumb-item"><a href="#"># नेपाली कांग्रेस</a></li>
+                <li class="breadcrumb-item"><a href="#"># बलिउड</a></li>
+                <li class="breadcrumb-item"><a href="#"># केपी शर्मा ओली</a></li>
+                <li class="breadcrumb-item"><a href="#"># प्रचण्ड</a></li>
+            </ol>
+        </div>
+    </nav>
+
+
+    <!-- Categories Section -->
+    <section class="categories-wrap">
+        <div class="container">
+            <div class="cat-heading">
+                <h2 class="custom-bg-primary custom-text-white custom-fs-20">
+                    Category: <span>जीवनशैली</span></h2>
+            </div>
+            <div class="categories">
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="cat-article">
+                    <a href="#">
+                        <div class="img-wrap">
+                            <img src="img/IMG_20210814_111744-2048x1536.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="article-title">
+                            <h2 class="custom-fw-600 custom-fs-18">
+                               <a href="#">
+
+                                   सानिमा लाइफको आईपीओ बाँडफाँड सम्पन्न, भाग्यशाली ५ लाख ४० हजारले पाउने भए १० कित्ता
+                                </a>
+                            </h2>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="page-nav">
+                <span>पृष्ठ 1 / 7</span>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <span>...</span>
+                <a href="#">पछिल्लो पृष्ठ »</a>
+                <a href="#">अन्तिम पृष्ठ »</a>
+            </div>
+        </div>
+    </section>
+    
+  
+     <!-- Footer -->
+     <footer class="custom-bg-primary custom-text-lightgray footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-md-5 d-flex">
+                        <div class="ftrlogo d-none d-sm-block">
+                            <a href="index.html">
+                                <img src="img/oknewLogo.png" alt="" srcset="">
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-title">
+                                <div class="img-wrap">
+                                    <a href="index.html">
+                                        <img src="img/footerTitle.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="footer-contactifo custom-fs-16">
+                                +977-1-4780076, +977-1-4786489
+                                <br>
+                                news@onlinekhabar.com
+                                <br>
+                                अध्यक्ष तथा प्रबन्ध निर्देशक: धर्मराज भुसाल
+                                <br>
+                                प्रधान सम्पादकः शिव गाउँले
+                                <br>
+                                सूचना विभाग दर्ता नं. २१४ / ०७३–७४
+                                <br>
+                            </p>
+                            <ul class="footer-social d-flex">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex">
+                                <div class="footer-items">
+                                    <h2>समाचार</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="#">समाज</a> </li>
+                                        <li><a href="#">विचार/ब्लग</a> </li>
+                                        <li><a href="#">साहित्य</a> </li>
+                                        <li><a href="#">अन्तर्वार्ता</a> </li>
+                                        <li><a href="#">खेलकुद़़</a> </li>
+                                        <li><a href="#">जीवनशैली/स्वास्थ्य</a> </li>
+                                        <li><a href="#">प्रवास</a> </li>
+                                        <li><a href="">अन्तर्राष्ट्रिय</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-items">
+                                    <h2>बिजनेस</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="#">बजार</a> </li>
+                                        <li><a href="#">पर्यटन</a> </li>
+                                        <li><a href="#">रोजगार</a> </li>
+                                        <li><a href="#">बैँक / वित्त</a> </li>
+                                        <li><a href="#">अटो</a> </li>
+                                        <li><a href="#">सूचना-प्रविधि</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 d-flex">
+                                <div class="footer-items">
+                                    <h2>मनोरञ्जन</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="#">
+                                                ब्लोअप</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                गसिप</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                बलिउड /</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                हलिउड</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                भिडियो</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                ताजा समाचार</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="footer-items">
+                                    <h2>विशेष श्रृंखला</h2>
+                                    <ul class="footer-links">
+                                        <li><a href="#">
+
+                                                संसद विघटन</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                विशेष</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                फ्रन्टलाइन</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                हिरोज्</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                चुनावी बहस</li>
+                                        </a>
+                                        <li><a href="#">
+
+                                                निर्वाचन २०७४</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-footer custom-bg-dark-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/about-us/">हाम्रोबारे</a> <a href="#">प्रयोगका शर्त </a> <a
+                            href="/advertise-with-us/">विज्ञापन</a> <a href="/privacy-policy/">Privacy Policy</a> <a
+                            href="/contact-us/">सम्पर्क</a>
+                    </div>
+                    <div class="col-md-6 text-start text-md-end">
+                        <p >© २००६-२०२१ Onlinekhabar.com सर्वाधिकार सुरक्षित
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
