@@ -1,8 +1,8 @@
 :root {
   /* Colors */
-  --custom-primary: linear-gradient(to right, #189ab4, #11839f, #0c6d8a, #085874, #05445e);
-  --custom-dark-primary: #05445E;
-  --custom-light-primary: #189AB4;
+  --custom-primary: #2260bf;
+  --custom-dark-primary: #2260bf;
+  --custom-light-primary: #2260bf;
   --custom-secondary: #ff3a20;
   --custom-white: #fff;
   --custom-lightgray: #dee4ee;
@@ -66,9 +66,10 @@
 
 /* Light Mode Color  */
 [color-scheme= 'light']{
-  --custom-primary: linear-gradient(to right, #189ab4, #11839f, #0c6d8a, #085874, #05445e);
-  --custom-dark-primary: #05445E;
-  --custom-light-primary: #189AB4;
+  /* --custom-primary: linear-gradient(to right, #005272, #16bbe4, #45d4ff, #6dd4fa, #006993); */
+  --custom-primary: #2260bf;
+  --custom-dark-primary: #2260bf;
+  --custom-light-primary: #2260bf;
   --custom-secondary: #ff3a20;
   --custom-white: #fff;
   --custom-lightgray: #dee4ee;
@@ -276,7 +277,7 @@ section {
 .custom-ad-banner-700 {
   width: 700px;
   max-width: 700px !important;
-  height: 70px;
+  height: 90px;
 }
 .custom-ad-banner-900 {
   max-width: 900px !important;
